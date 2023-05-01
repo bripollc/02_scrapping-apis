@@ -26,6 +26,8 @@ def graph_top15 (df_final):
         go.Bar(
             x=top_emojis.index,
             y=top_emojis.values,
+            text=top_emojis.values,
+            textposition='inside',
             marker=dict(
                 color=['#FFC300', '#FF5733', '#C70039', '#900C3F', '#581845', '#DAF7A6', '#FFC300', '#FF5733', '#C70039', '#900C3F', '#581845', '#DAF7A6', '#FFC300', '#FF5733', '#C70039']
             )
@@ -35,7 +37,7 @@ def graph_top15 (df_final):
     # LABELS
     fig.update_layout(title='Top 15 Emojis',
                     xaxis_title='Emojis',
-                    yaxis_title='Number of emojis')
+                    yaxis_title='Number of Emojis')
 
     # SAVE
     fig.write_image("figures/graph_top15.png", width=1600, height=800, scale=2)
@@ -56,7 +58,7 @@ def graph_rain (df_final):
 
     # ATTRIBUTES
     fig = px.bar(emojis_by_rain, x="Rain", y="Count", color="Rain",
-                title="Number of emoticons according to rainfall")
+                title="Number of Emojis according to rainfall")
 
     # LABELS
     fig.update_layout(xaxis=dict(tickmode="array", tickvals=[0, 1], ticktext=["No Rain", "Rain"], title="Weather"))
@@ -88,8 +90,10 @@ def graph_top_emojis_year (df_final):
    
    
    # LABELS
-    fig.update_layout(xaxis_title="Year", yaxis_title="Number of emojis",
+    fig.update_layout(xaxis_title="Year", yaxis_title="Number of Emojis",
                     xaxis=dict(tickvals=[2021, 2022, 2023]))
+    
+    fig.update_traces(texttemplate='%{y}', textposition='inside')
     
     # SAVE
     fig.write_image("figures/graph_top_emojis_year.png", width=1600, height=800, scale=2)
@@ -116,7 +120,7 @@ def graph_top_emojis_temp (df_final):
 
     # LABELS
     fig.update_layout(
-        title='Top 5 emojis sent by temperature',
+        title='Top 5 Emojis sent by temperature',
         xaxis_title='Mean temperature',
         yaxis_title='Number of Emojis',
         bargap=0.1
@@ -158,7 +162,7 @@ def graph_num_emojis_temp (df_final):
 
     # LABELS
     fig.update_layout(
-        title='Number of emojis sent per temperature',
+        title='Number of Emojis sent per temperature',
         xaxis_title='Mean temperature',
         yaxis_title='Number of emojis',
         showlegend=False

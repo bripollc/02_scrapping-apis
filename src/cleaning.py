@@ -5,10 +5,6 @@ import re
 import emoji
 
 
-import warnings
-warnings.filterwarnings('ignore')
-
-
 import requests
 
 
