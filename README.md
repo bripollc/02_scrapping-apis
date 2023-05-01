@@ -37,7 +37,7 @@ The goal of this project is to enrich a dataset using tools such as web scraping
 
 * Conclusion: Draw conclusions based on the results of the visualizations.
 
-![workflow](/images/workflow.png)
+![workflow](/images/workflow.jpg)
 
 ## Organization
 The repository consists of a README file, a .gitignore file and the following folders:
@@ -56,6 +56,6 @@ It would be interesting to analyze conversations from different social relations
 Additional graphs could be generated with different types of visualization and grouping variables in different ways to obtain new hypotheses.
 
 ## Links
-![API](https://open-meteo.com/)
+[API](https://open-meteo.com/)
 
 
