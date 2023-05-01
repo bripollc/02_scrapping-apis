@@ -17,11 +17,9 @@ WhatsApp and emojis are fundamental elements of modern communication. As one of 
 By analyzing data from our WhatsApp conversations, including the use of emojis, we can obtain valuable information about our communication behaviors with others. This can help us better understand trends and patterns in our way of communicating.
 
 
-<center>Which is the emoticon we send more frequently?
-
-Do we send more emojis depending on the temperature?
-
-Do we send more emoticons when the weather is good??</center>
+* __Which is the emoticon we send more frequently?__
+* __Do we send more emojis depending on the temperature?__
+* __Do we send more emoticons when the weather is good?__
 
 
 ## Database
@@ -49,11 +47,11 @@ The repository consists of a README file, a .gitignore file and the following fo
 
 
 ## Conclusions
-The number of conversations analyzed should be increased in order to obtain more conclusive correlations and increase the reliability of the results.
+- The number of conversations analyzed should be increased in order to obtain more conclusive correlations and increase the reliability of the results.
 
-It would be interesting to analyze conversations from different social relationships (family, friends, partner, co-workers...) to identify patterns of behavior and to observe the dynamics of communication in each type of relationship.
+- It would be interesting to analyze conversations from different social relationships (family, friends, partner, co-workers...) to identify patterns of behavior and to observe the dynamics of communication in each type of relationship.
 
-Additional graphs could be generated with different types of visualization and grouping variables in different ways to obtain new hypotheses.
+- Additional graphs could be generated with different types of visualization and grouping variables in different ways to obtain new hypotheses.
 
 ## Links
 [API](https://open-meteo.com/)
