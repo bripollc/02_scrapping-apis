@@ -12,14 +12,14 @@
 - [Links](#links)
 
 ## Project Description
-WhatsApp and emojis are fundamental elements of modern communication. As one of the most popular messaging applications worldwide, WhatsApp enables users to communicate effectively through text, voice and video messages. Emojis, on the other hand, serve as a tool to express emotions, feelings or actions quickly and efficiently, either as a complement or a replacement to written text.
+WhatsApp and emojis are fundamental elements of modern communication. As one of the most popular messaging applications worldwide, WhatsApp enables users to communicate effectively through text, voice and video messages. Emojis, on the other hand, serve as a tool to express emojis, feelings or actions quickly and efficiently, either as a complement or a replacement to written text.
 
 By analyzing data from our WhatsApp conversations, including the use of emojis, we can obtain valuable information about our communication behaviors with others. This can help us better understand trends and patterns in our way of communicating.
 
 
-* __Which is the emoticon we send more frequently?__
+* __Which is the emojis we send more frequently?__
 * __Do we send more emojis depending on the temperature?__
-* __Do we send more emoticons when the weather is good?__
+* __Do we send more emojis when the weather is good?__
 
 
 ## Database

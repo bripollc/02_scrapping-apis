@@ -133,11 +133,7 @@ def date_limit (df):
 def API_open_meteo (df):
 
     init_date = str(df["Date"].min().date())
-    #end_date = str(df.iloc[df.shape[0]]["Date"])
     end_date = str(df["Date"].max().date())
-
-
-   # print(end_date)
 
 
     url_weather = f"https://archive-api.open-meteo.com/v1/archive?latitude=41.39&longitude=2.16&start_date={init_date}&end_date={end_date}&daily=temperature_2m_mean,rain_sum&timezone=auto"

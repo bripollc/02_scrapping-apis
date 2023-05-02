@@ -18,7 +18,7 @@ import os
 def graph_top15 (df_final):
         
 
-    # GROUP: by coubnting the 15 emojis more used
+    # GROUP: by counting the 15 emojis more used
     top_emojis = df_final['Emojis'].value_counts(sort=True, dropna=False).head(10)
 
     # ATTRIBUTES
@@ -53,7 +53,7 @@ def graph_top15 (df_final):
 # GRAPH RAIN
 def graph_rain (df_final):
 
-    # GROUP: by the "Rain" column and count the emoticons in each group
+    # GROUP: by the "Rain" column and count the emojis in each group
     emojis_by_rain = df_final.groupby("Rain")["Emojis"].count().reset_index(name="Count")
 
     # ATTRIBUTES
@@ -77,7 +77,7 @@ def graph_rain (df_final):
 # GRAPH TOP EMOJIS BY YEAR
 def graph_top_emojis_year (df_final):
 
-    #GROUP: Agroup the data by year and emoji, count the frequency of each combination and reset the index
+    #GROUP: Agroup the data by year and emoji, count the frequency of each combination
     top_emojis_by_year = df_final.groupby(["Year", "Emojis"]).size().reset_index(name="Count")
     # Sort data by year and by the frequency of each emoji within the year
     top_emojis_by_year = top_emojis_by_year.sort_values(["Year", "Count"], ascending=[True, False])
